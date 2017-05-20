@@ -12,15 +12,20 @@ done
 ```
 
 # save time/date format to the shell variable
-```
+```bash
 dtStr="$(date +"%Y%m%d")"
 ```
 
 # parse option for date format
-```
+```bash
 while getopts "d:" opt; do
   case "$opt" in
   d) dtStr=$OPTARG
   esac
 done
+```
+
+# date format
+```bash
+dtStr="#$(date -d '2 days agp' +'%m%d')"
 ```
