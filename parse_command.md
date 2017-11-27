@@ -27,5 +27,9 @@ done
 
 # date format
 ```bash
-dtStr="#$(date -d '2 days agp' +'%m%d')"
+dtStr="#$(date -d '2 days ago' +'%m%d')"
+```
+
+# check weekday
+```bash
 ```
